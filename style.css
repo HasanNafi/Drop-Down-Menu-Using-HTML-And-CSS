@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav .image {
+    width: 100%;
+    position: absolute;
+}
+
+.nav .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(36, 172, 36);
+    position: relative;
+}
+
+.nav .list-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav .list-item li {
+    padding: 0.7rem 0.8rem;
+    margin: 10px;
+    list-style: none;
+    margin-left: 2rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.nav .list-item li:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav .fa {
+    margin-right: 8px;
+}
+
+.sub-item-1 {
+    display: none;
+}
+
+.list-item li:hover .sub-item-1 {
+    display: block;
+    background: rgb(36, 172, 36);
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.list-item li:hover .sub-item-1 li {
+    text-align: left;
+    border-bottom: 1px dotted #fff;
+}
+
+.list-item li:hover .sub-item-1 li i {
+    float: right;
+    margin-left: 5px;
+    color: white;
+}
+
+.sub-item-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-item-2 {
+    display: block;
+    position: absolute;
+    background: rgb(36, 172, 36);
+    margin-top: -40px;
+    margin-left: 140px;
+    text-align: center;
+    width: 100%;
+}
